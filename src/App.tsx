@@ -43,22 +43,22 @@ const Portfolio = () => {
   return(
     <div>
       <div>
-        Calculator App
+        <NavLink to="/components/portfolioComponents/calculator">Calculator App</NavLink>
       </div>
       <div>
-        Colorbox App
+        <NavLink to="/components/portfolioComponents/colorbox">ColorBox App</NavLink>
       </div>
       <div>
-        Filtering
+        <NavLink to="/components/portfolioComponents/filtering">Filtering App</NavLink>
       </div>
       <div>
-        Interval
+        <NavLink to="/components/portfolioComponents/interval">Interval App</NavLink>
       </div>
       <div>
-        Shoppinglist
+        <NavLink to="/components/portfolioComponents/shoppinglist">Shopping List App</NavLink>
       </div>
       <div>
-        TicTacToe
+        <NavLink to="/components/portfolioComponents/tictactoe">TicTacToe App</NavLink>
       </div>
       <div>
         Placeholder
@@ -116,44 +116,42 @@ const App = () => {
         {
           path: "portfolio",
           element: <Portfolio/>,
-          children: [
-            {
-              path: "calculator",
-              element: <Calculator/>
-            },
-            {
-              path: "colorbox",
-              element: <ColorBox/>
-            },
-            {
-              path: "filtering",
-              element: <Filtering/>
-            },
-            {
-              path: "interval",
-              element: <Interval/>
-            },
-            {
-              path: "shoppinglist",
-              element: <ShoppingList/>
-            },
-            {
-              path: "tictactoe",
-              element: <TicTacToe/>
-            },
-            {
-              path: "calculator",
-              element: <Calculator/>
-            },
-            {
-              path: "calculator",
-              element: <Calculator/>
-            },
-          ]
         },
         {
           path: "contact",
           element: <Contact/>
+        },
+        {
+          path: "/components/portfolioComponents/calculator",
+          element: <Calculator/>
+        },
+        {
+          path: "/components/portfolioComponents/colorbox",
+          element: <ColorBox/>
+        },
+        {
+          path: "/components/portfolioComponents/filtering",
+          element: <Filtering/>
+        },
+        {
+          path: "/components/portfolioComponents/interval",
+          element: <Interval/>
+        },
+        {
+          path: "/components/portfolioComponents/shoppinglist",
+          element: <ShoppingList/>
+        },
+        {
+          path: "/components/portfolioComponents/tictactoe",
+          element: <TicTacToe/>
+        },
+        {
+          path: "/components/portfolioComponents/calculator",
+          element: <Calculator/>
+        },
+        {
+          path: "/components/portfolioComponents/calculator",
+          element: <Calculator/>
         },
       ]
     }
