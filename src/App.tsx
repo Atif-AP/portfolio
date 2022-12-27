@@ -1,25 +1,168 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Outlet, createBrowserRouter, RouterProvider, NavLink } from "react-router-dom";
+import { useState } from 'react';
+import styles from "./App.module.css";
+import Calculator from "./components/portfolioComponents/Calculator";
+import { ColorBox } from "./components/portfolioComponents/Colorbox";
+import { Filtering } from "./components/portfolioComponents/Filtering";
+import Interval from "./components/portfolioComponents/Interval";
+import ShoppingList from "./components/portfolioComponents/Shoppinglist";
+import TicTacToe from "./components/portfolioComponents/TicTacToe";
 
-function App() {
+const Root = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.container}>
+        <div className={styles.header}>
+            <NavLink className={styles.link} to="/" >01 Home</NavLink>
+            <NavLink className={styles.link} to="portfolio">02 Portfolio</NavLink>
+            <NavLink className={styles.link} to="contact">03 Contact</NavLink>
+        </div>
+        <div>
+            <Outlet/>
+        </div>
     </div>
+);
+}
+
+const Home = () => {
+  return(
+    <>
+      <div className={styles.intro}>
+        <p>Hi, my name is<br></br>
+        <span className={styles.name}>Atif Khalil</span><br></br>
+        <span className={styles.title}>Full Stack Developer</span><br></br>
+        I'm a Full Stack Developer mostly into Front End using React</p> 
+      </div>
+      <div>
+
+      </div>
+    </>
+  )
+}
+
+const Portfolio = () => {
+  return(
+    <div>
+      <div>
+        Calculator App
+      </div>
+      <div>
+        Colorbox App
+      </div>
+      <div>
+        Filtering
+      </div>
+      <div>
+        Interval
+      </div>
+      <div>
+        Shoppinglist
+      </div>
+      <div>
+        TicTacToe
+      </div>
+      <div>
+        Placeholder
+      </div>
+      <div>
+        Placeholder
+      </div>
+    </div>
+  )
+};
+
+const Contact = () => {
+  const [submitted, setSubmitted] = useState(false);
+  const handleSubmit = () => {
+    setTimeout(() => {
+      setSubmitted(true);
+    }, 100)
+  };
+
+  if (submitted) {
+    return(
+      <>
+        <div>Thank you!</div>
+        <div>I will be in touch!</div>
+      </>
+    )
+  }
+
+  return(
+    <>
+    <form action='' onSubmit={handleSubmit} method='post'>
+      <label>Name</label>
+      <input type='text' placeholder='Your Name' name='name' required></input>
+      <label>E-mail</label>
+      <input type='email' placeholder='Your Email' name='email' required></input>
+      <label>Message</label>
+      <textarea placeholder='Coding a Message...' name='message' required></textarea>
+      <button type='submit'>Send Message</button>
+
+    </form>
+    </>
+  )
+}
+
+const App = () => {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Root/>,
+      children: [
+        {
+          path: "",
+          element: <Home/>
+        },
+        {
+          path: "portfolio",
+          element: <Portfolio/>,
+          children: [
+            {
+              path: "calculator",
+              element: <Calculator/>
+            },
+            {
+              path: "colorbox",
+              element: <ColorBox/>
+            },
+            {
+              path: "filtering",
+              element: <Filtering/>
+            },
+            {
+              path: "interval",
+              element: <Interval/>
+            },
+            {
+              path: "shoppinglist",
+              element: <ShoppingList/>
+            },
+            {
+              path: "tictactoe",
+              element: <TicTacToe/>
+            },
+            {
+              path: "calculator",
+              element: <Calculator/>
+            },
+            {
+              path: "calculator",
+              element: <Calculator/>
+            },
+          ]
+        },
+        {
+          path: "contact",
+          element: <Contact/>
+        },
+      ]
+    }
+  ])
+
+  return (
+    <>
+      <RouterProvider router={router}/>
+    </>
   );
 }
 

@@ -1,0 +1,45 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background: rgb(17, 77, 74);
+}
+
+.container{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    min-height: 10vh;
+    color: white;
+}
+
+.link{
+    margin: 2%;
+    color: white;
+    font-size: larger;
+    text-decoration: none;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 85vh;
+    color: white;
+    padding-left: 2.5%;
+}
+
+.name{
+    font-size: 100px;
+}
+
+.title{
+    font-size: 48px;
+    padding-bottom: 2ch;
+}
