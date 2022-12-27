@@ -6,7 +6,7 @@ interface Student {
     year:number
   }
 
-export const Filtering = () => {
+const Filtering = () => {
 
     const [searchText,setSearchText] = useState("");
     const [sort,setSort] = useState("name");
@@ -61,4 +61,6 @@ export const Filtering = () => {
     </table>
   </div>
   );
-  }
+}
+
+export default Filtering;

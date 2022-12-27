@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
- export const ColorBox = () => {
+const ColorBox = () => {
   const colors = ["red", "green", "blue", "yellow", "purple"];
   const [color, setColor] = useState(colors[0]);
 
@@ -17,3 +17,5 @@ import React, { useState } from 'react';
       </div>
   );
 }
+
+export default ColorBox;

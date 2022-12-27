@@ -2,8 +2,8 @@ import { Outlet, createBrowserRouter, RouterProvider, NavLink } from "react-rout
 import { useState } from 'react';
 import styles from "./App.module.css";
 import Calculator from "./components/portfolioComponents/Calculator";
-import { ColorBox } from "./components/portfolioComponents/Colorbox";
-import { Filtering } from "./components/portfolioComponents/Filtering";
+import ColorBox from "./components/portfolioComponents/Colorbox";
+import Filtering from "./components/portfolioComponents/Filtering";
 import Interval from "./components/portfolioComponents/Interval";
 import ShoppingList from "./components/portfolioComponents/Shoppinglist";
 import TicTacToe from "./components/portfolioComponents/TicTacToe";
