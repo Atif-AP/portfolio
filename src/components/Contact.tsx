@@ -19,13 +19,13 @@ const Contact = () => {
       };
   
     return(
-      <form ref={form} onSubmit={sendEmail}>
+      <form ref={form} onSubmit={sendEmail} className={styles.form}>
         <label>Name</label>
-        <input type='text' placeholder='Your Name' name='name'></input>
+        <input type='text' placeholder='Your Name' name='name' required></input>
         <label>E-mail</label>
-        <input type='email' placeholder='Your Email' name='email'></input>
+        <input type='email' placeholder='Your Email' name='email' required></input>
         <label>Message</label>
-        <textarea placeholder='Coding a Message...' name='message'></textarea>
+        <textarea placeholder='Coding a Message...' name='message' required></textarea>
         <button type='submit'>Send Message</button>
       </form>
     );

@@ -20,11 +20,28 @@ html, body{
     text-align: center;
     width: 100%;
     min-height: 10vh;
+    border-bottom: 1px solid white;
 }
 
 .link{
-    margin: 2%;
-    font-size: larger;
+    margin: 1%;
+    font-size: 40px;
     text-decoration: none;
     color: white;
+    text-shadow: 3px 1px rgb(235, 201, 52);
+    border-right: 1px solid white;
+    padding-right: 2%;
+}
+
+.link:hover, .link1:hover{
+    text-shadow: 3px 1px 8px black;
+}
+
+.link1{
+    margin: 2%;
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 3px 1px rgb(235, 201, 52);
+    border: none;
 }

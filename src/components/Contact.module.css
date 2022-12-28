@@ -1,0 +1,32 @@
+.form{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    border: solid black 2px;
+    width: 30%;
+    min-height: 40vh;
+    box-shadow: 10px 10px rgb(235, 201, 52);
+    transition: transform .2s;
+}
+
+.form:hover{
+    transform: scale(1.1);
+}
+
+label, input, button, textarea{
+    padding: 1%;
+    margin: 1%;
+}
+
+button{
+    justify-self: center;
+    align-self: center;
+    border-radius: 5px;
+    width: 50%;
+    color: white;
+    background-color: rgb(223, 183, 6);
+}
+
+button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

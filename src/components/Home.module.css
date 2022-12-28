@@ -1,3 +1,7 @@
+.container{
+    display: flex;
+}
+
 .intro{
     display: flex;
     flex-direction: column;
@@ -5,10 +9,24 @@
     min-height: 85vh;
     color: white;
     padding-left: 2.5%;
+    width: 50%;
+}
+
+.foto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+img{
+    border-radius: 80%;
+    box-shadow: 11px 1px 0px 8px rgb(235, 201, 52);
 }
 
 .name{
     font-size: 100px;
+    text-shadow: 6px 1px rgb(235, 201, 52);
 }
 
 .title{
