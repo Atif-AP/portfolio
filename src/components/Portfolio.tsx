@@ -59,9 +59,18 @@ const Portfolio = () => {
             </Link>
         </div>
         <div className={styles.childContainer}>
-            <h1>PlaceHolder App</h1>
+            <h1>Slots App</h1>
             <p>App gemaakt met React state</p>
-            <Link to="/components/portfolioComponents/">
+            <Link to="/components/portfolioComponents/slots">
+                <button>
+                    Go to App
+                </button>
+            </Link>
+        </div>
+        <div className={styles.childContainer}>
+            <h1>Counter List App</h1>
+            <p>App gemaakt met React state</p>
+            <Link to="/components/portfolioComponents/counterlist">
                 <button>
                     Go to App
                 </button>
@@ -70,7 +79,7 @@ const Portfolio = () => {
         <div className={styles.childContainer}>
             <h1>Placeholder App</h1>
             <p>App gemaakt met React state</p>
-            <Link to="/components/portfolioComponents/">
+            <Link to="/components/apiComponents/cryptoapi">
                 <button>
                     Go to App
                 </button>

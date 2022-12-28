@@ -5,10 +5,13 @@ import Filtering from "./components/portfolioComponents/Filtering";
 import Interval from "./components/portfolioComponents/Interval";
 import ShoppingList from "./components/portfolioComponents/Shoppinglist";
 import TicTacToe from "./components/portfolioComponents/TicTacToe";
-import Root from "./components/Root"
-import Portfolio from "./components/Portfolio"
-import Home from "./components/Home"
-import Contact from "./components/Contact"
+import Root from "./components/Root";
+import Portfolio from "./components/Portfolio";
+import Home from "./components/Home";
+import Contact from "./components/Contact";
+import CryptoAPI from "./components/apiComponents/CryptoAPI";
+import SlotMachine from "./components/portfolioComponents/Slots";
+import CounterList from "./components/portfolioComponents/CounterList";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -53,13 +56,17 @@ const App = () => {
           element: <TicTacToe/>
         },
         {
-          path: "/components/portfolioComponents/calculator",
-          element: <Calculator/>
+          path: "/components/portfolioComponents/counterlist",
+          element: <CounterList/>
         },
         {
-          path: "/components/portfolioComponents/calculator",
-          element: <Calculator/>
+          path: "/components/portfolioComponents/slots",
+          element: <SlotMachine slots={3}/>
         },
+        {
+          path: "/components/apiComponents/cryptoapi",
+          element: <CryptoAPI/>
+        }
       ]
     }
   ])

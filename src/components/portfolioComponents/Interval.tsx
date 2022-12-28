@@ -49,11 +49,6 @@ const RandomValue = ({min, max} : RandomValueProps) => {
 }
 
 const Interval = () => {
- 
-
-  
-
-   
     return (
         <>
             <Timer/>
