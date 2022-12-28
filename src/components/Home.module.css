@@ -1,0 +1,17 @@
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 85vh;
+    color: white;
+    padding-left: 2.5%;
+}
+
+.name{
+    font-size: 100px;
+}
+
+.title{
+    font-size: 48px;
+    padding-bottom: 2ch;
+}
