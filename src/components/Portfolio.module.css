@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: solid 2px black;
+    width: 75%;
+    height: 90vh;
+    flex-wrap: wrap;
+}
+
+.childContainer{
+    width: 20%;
+    padding: 2.5px;
+    margin: 1%;
+    border: solid 2px white;
+}
