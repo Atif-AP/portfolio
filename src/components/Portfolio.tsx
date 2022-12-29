@@ -79,7 +79,7 @@ const Portfolio = () => {
         <div className={styles.childContainer}>
             <h1>Placeholder App</h1>
             <p>App gemaakt met React state</p>
-            <Link to="/components/apiComponents/cryptoapi">
+            <Link to="/components/apiComponents/weatherapi">
                 <button className={styles.pButton}>
                     Go to App
                 </button>

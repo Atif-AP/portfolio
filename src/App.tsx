@@ -9,7 +9,6 @@ import Root from "./components/Root";
 import Portfolio from "./components/Portfolio";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
-import CryptoAPI from "./components/apiComponents/CryptoAPI";
 import SlotMachine from "./components/portfolioComponents/Slots";
 import CounterList from "./components/portfolioComponents/CounterList";
 
@@ -63,10 +62,6 @@ const App = () => {
           path: "/components/portfolioComponents/slots",
           element: <SlotMachine slots={3}/>
         },
-        {
-          path: "/components/apiComponents/cryptoapi",
-          element: <CryptoAPI/>
-        }
       ]
     }
   ])

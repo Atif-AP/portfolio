@@ -4,12 +4,10 @@ import emailjs from '@emailjs/browser';
 import {TEMPLATE_ID,SERVICE_ID,USER_ID} from "../config/config.js"
 
 const Contact = () => {
-    const form = useRef("");
-
     const sendEmail = (e: any) => {
         e.preventDefault();
     
-        emailjs.sendForm( SERVICE_ID,TEMPLATE_ID, form.current, USER_ID)
+        emailjs.sendForm( SERVICE_ID,TEMPLATE_ID, e.target, USER_ID)
           .then(
             result => console.log(result.text),
             error => console.log(error.text)
@@ -19,7 +17,7 @@ const Contact = () => {
       };
   
     return(
-      <form ref={form} onSubmit={sendEmail} className={styles.form}>
+      <form onSubmit={sendEmail} className={styles.form}>
         <label>Name</label>
         <input type='text' placeholder='Your Name' name='name' required></input>
         <label>E-mail</label>
