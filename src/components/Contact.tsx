@@ -1,4 +1,3 @@
-import React, { useRef } from 'react';
 import styles from "./Contact.module.css"
 import emailjs from '@emailjs/browser';
 import {TEMPLATE_ID,SERVICE_ID,USER_ID} from "../config/config.js"
