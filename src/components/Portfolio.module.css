@@ -9,8 +9,24 @@
 }
 
 .childContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 20%;
     padding: 2.5px;
     margin: 1%;
     border: solid 2px white;
+    height: 20%;
+    box-shadow: 10px 10px rgb(235, 201, 52);
+    transition: transform .2s;
+}
+
+.childContainer:hover{
+    transform: scale(1.1);
+}
+
+.pButton{
+    width: 20ch;
+    height: 5ch;
 }

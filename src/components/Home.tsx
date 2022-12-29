@@ -11,7 +11,7 @@ const Home = () => {
           I'm a Full Stack Developer mostly into Front End using React</p> 
         </div>
         <div className={styles.foto}>
-          <img src={headshot} alt="My Face" height={500} />
+          <img src={headshot} alt="My Face" height={500} className={styles.headshot}/>
         </div>
       </div>
     )
