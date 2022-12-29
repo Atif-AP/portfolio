@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import styles from "./Components.module.css"
 
 const Timer = () => {
     const [timer, setTimer] = useState(0);
@@ -50,12 +51,12 @@ const RandomValue = ({min, max} : RandomValueProps) => {
 
 const Interval = () => {
     return (
-        <>
+        <div className={styles.container}>
             <Timer/>
             <CurrentTime/>
             <RandomValue min={1} max={100}/>
             <RandomValue min={100} max={200}/>
-        </>
+        </div>
     )
 }
 

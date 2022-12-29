@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import styles from "./Components.module.css"
 
 const CounterList = () => {
     const [counters, setCounters] = useState<number[]>([]);
@@ -18,7 +19,7 @@ const CounterList = () => {
     }
 
     return (
-        <>
+        <div className={styles.container}>
             {counters.map((counter, index) => {
                 let color = 'black';
                 if (counter > 0) {
@@ -36,7 +37,7 @@ const CounterList = () => {
             })}
             <p>Som van de tellers: {counters.reduce((prev, curr) => prev + curr, 0)}</p>
             <button onClick={addCounter}>Voeg teller toe</button>
-        </>
+        </div>
     )
 
 }

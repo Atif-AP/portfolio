@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from "./Components.module.css"
 
 const TicTacToe = () => {
   const [board, setBoard] = useState(['','','','','','','','','']);
@@ -32,27 +33,29 @@ const TicTacToe = () => {
   }
 
   return (
-    <div
-      style={{
-        display: 'grid',
-        gridTemplateRows: '50px 50px 50px',
-        gridTemplateColumns: '50px 50px 50px',
-      }}
-    >
-      {board.map((element, index) =>
-          <div
-            key={index}
-            onClick={() => play(index)}
-            style={{
-              border: '1px solid black',
-              fontSize: '30px',
-              textAlign: 'center',
-            }}
-          >
-            {element}
-          </div>
-      )}
-      {getWinner() && <p style={{gridColumnStart: 1, gridColumnEnd: "span 3"}}>{getWinner()} WINS!</p>}
+    <div className={styles.container}>
+      <div
+        style={{
+         display: 'grid',
+         gridTemplateRows: '50px 50px 50px',
+         gridTemplateColumns: '50px 50px 50px',
+        }}
+        >
+        {board.map((element, index) =>
+            <div
+              key={index}
+              onClick={() => play(index)}
+              style={{
+                border: '2px solid black',
+                fontSize: '30px',
+                textAlign: 'center',
+              }}
+            >
+              {element}
+            </div>
+        )}
+        {getWinner() && <p style={{gridColumnStart: 1, gridColumnEnd: "span 3"}}>{getWinner()} WINS!</p>}
+      </div>
     </div>
   );
 };

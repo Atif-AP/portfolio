@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import styles from "./Components.module.css"
 
 interface Student {
     name:string;
@@ -33,7 +34,7 @@ const Filtering = () => {
       return 0;
     })
   return (
-  <div>
+  <div className={styles.container}>
     <div>
       <label>Search: <input type="text" value={searchText}  onChange={(event) => setSearchText(event.target.value)}/>
       </label>

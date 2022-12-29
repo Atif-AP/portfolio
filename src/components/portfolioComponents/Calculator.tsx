@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./Components.module.css"
 
 const Calculator = () => {
     const [number1, setNumber1] = React.useState(0);
@@ -25,7 +26,7 @@ const Calculator = () => {
         }
     }
     return (
-        <div>
+        <div className={styles.container}>
             Number 1: <input type="number" value={number1} onChange={(e) => setNumber1(parseInt(e.target.value))}/>
             Number 1: <input type="number" value={number2} onChange={(e) => setNumber2(parseInt(e.target.value))}/>
             <select value={operator} onChange={(e) => setOperator(e.target.value)}>
