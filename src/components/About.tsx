@@ -8,7 +8,7 @@ const About = () => {
         <div className={styles.about}>
             <h1>Atif Khalil</h1>
             <h2>About Me:</h2>
-            <h4>Hello, I am Atif Khalil I am in my final year of Graduate Programmeren and I am a very enthusiastic programmer. I have been programming since I was 15. I created my first ever "Hello World" application in visual basic.
+            <h4>Hello, I am Atif Khalil I am in my final year of my Graduate Programming and I am a very enthusiastic programmer! I have been programming since I was 15. I created my first ever "Hello World" application in visual basic.
                 In the meanwhile 7 years later it has been quite the journey. I have studied 3 years of Bachelors Electronics-ICT aswell so I have been actively engaged in programming studies for 5 years now. I find myself having the most fun
                 in Web Development and want to continue that into my carreer as a Full Stack Developer.
             </h4>
