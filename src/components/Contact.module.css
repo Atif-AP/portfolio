@@ -1,8 +1,12 @@
+body{
+    min-height: 100vh;
+}
+
 .form{
     display: flex;
     margin: auto;
     flex-direction: column;
-    border: solid black 2px;
+    border: solid white 2px;
     width: 30%;
     min-height: 40vh;
     box-shadow: 10px 10px rgb(235, 201, 52);
