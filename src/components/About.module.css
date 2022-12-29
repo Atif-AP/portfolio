@@ -1,0 +1,12 @@
+.about{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn{
+    width: 30ch;
+    height: 5ch;
+}

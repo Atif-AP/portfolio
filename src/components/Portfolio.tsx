@@ -77,9 +77,18 @@ const Portfolio = () => {
             </Link>
         </div>
         <div className={styles.childContainer}>
-            <h1>Placeholder App</h1>
-            <p>App gemaakt met React state</p>
-            <Link to="/components/apiComponents/weatherapi">
+            <h1>Activity App</h1>
+            <p>App gemaakt met behulp van een API in React/Typescript</p>
+            <Link to="/components/apiComponents/activity">
+                <button className={styles.pButton}>
+                    Go to App
+                </button>
+            </Link>
+        </div>
+        <div className={styles.childContainer}>
+            <h1>Relax Dog App</h1>
+            <p>App gemaakt met behulp van een API in React/Typescript</p>
+            <Link to="/components/apiComponents/dog">
                 <button className={styles.pButton}>
                     Go to App
                 </button>

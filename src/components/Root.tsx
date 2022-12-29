@@ -8,8 +8,9 @@ const Root = () => {
           <div className={styles.header}>
             <DarkMode/>
             <NavLink className={styles.link} to="/" >01 Home</NavLink>
-            <NavLink className={styles.link} to="portfolio">02 Portfolio</NavLink>
-            <NavLink className={styles.link1} to="contact">03 Contact</NavLink>
+            <NavLink className={styles.link} to="about">02 About</NavLink>
+            <NavLink className={styles.link} to="portfolio">03 Portfolio</NavLink>
+            <NavLink className={styles.link1} to="contact">04 Contact</NavLink>
           </div>
           <div>
             <Outlet/>
