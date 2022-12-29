@@ -28,7 +28,7 @@ const SunMovement = () => {
             console.log(sun)
         }
         getSun();
-    },[])
+    })
 
 
     return (
